@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce Product Page</title>
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans?query=Kumbh">
+    <title>Ecommerce Product Page Reloaded</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <!-- main container -->
-  <main>
-    <nav>
-      <!-- Logo -->
-      <li><a href="#"><img src="./images/logo.svg" alt="sneakers logo"></a></li>
+    <div class="container">
 
-      <!-- nav links -->
-      <li><a href="#">Collections</a></li>
-      <li><a href="#">Men</a></li>
-      <li><a href="#">Women</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+        <header>
+            <nav>
+                <div class="hamburger-menu"><a href="#"><img src="./images/icon-menu.svg" alt=""></a></div>
+                <div class="logo"><a href="#"><img src="./images/logo.svg" alt=""></a></div>
+                <div class="list-items"><a href="#">Collections</a></div>
+                <div class="list-items"><a href="#">Men</a></div>
+                <div class="list-items"><a href="#">Women</a></div>
+                <div class="list-items"><a href="#">About</a></div>
+                <div class="list-items"><a href="#">Contact</a></div>
+                <div class="cartIcon"><a class="cartIcon" href="#"><img src="./images/icon-cart.svg" alt=""></a></div>
+                <div class="avatar"><a class="avatar" href="#"><img src="./images/image-avatar.png" alt="profile"></a></div>
+            </nav>
+        </header>
 
-      <!-- right-side links -->
-      <li><a href="#"><img class="" src="./images/icon-cart.svg" alt="cart icon"></a></li>
-      <li><a href="#"><img class="avatar" src="./images/image-avatar.png" alt=""></a></li>
-    </nav>
+        <main>
+            <div class="leftCon">
+                <div class="lightbox">
+                    <img src="./images/image-product-1.jpg" alt="Nike Sneakers">
+                </div>
+                <div class="lightBox-nav">
+                    <div><img src="./images/icon-previous.svg" alt=""></div>
+                    <div><img src="./images/icon-next.svg" alt=""></div>
+                </div>
+                <div class="thumbnails">
+                    <div class="active"><img src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+                    <div><img src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+                    <div><img src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+                    <div><img src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+                </div>
+            </div>
 
-    <!-- contains all product images and texts -->
-    <div class="productInfoContainer">
-      
-      <!-- product image container -->
-      <div id="mainImage">
-        <img src="./images/image-product-1.jpg" alt="Nike sneakers">
+            <div class="rightCon">
+                <h4>SNEAKER COMPANY</h4>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring
+                    a durable outer sole, they'll withstand everything the weather can offer.</p>
+                
+                <div class="price">
+                    <div>
+                        <div><h2>$125.00</h2></div>
+                        <div><h3>50%</h3></div>
+                    </div>
+                    
+                    <h5>$250.00</h5>
+                </div>
 
-        <!-- product slider wrapper -->
-        <div class="thumbnailContainer">
-          <li><img src="./images/image-product-1-thumbnail.jpg" alt="Nike sneakers"></li>
-          <li><img src="./images/image-product-2-thumbnail.jpg" alt="Nike sneakers"></li>
-          <li><img src="./images/image-product-3-thumbnail.jpg" alt="Nike sneakers"></li>
-          <li><img src="./images/image-product-4-thumbnail.jpg" alt="Nike sneakers"></li>
-        </div>
-      </div>
-
-      <!-- right container -->
-      <div class="rightContainer">
-        <h5>Sneaker Company</h5>
-        <h2>Fall Limited Edition Sneakers</h2>
-        <p>These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable outer sole, they'll withstand everything the weather can offer.
-        </p>
-        <h3>$125.00 <span>50%</span> </h3>
-        <p class="discount">$250.00</p>
-
-        <div class="btnWrapper">
-          <button class="quantity">
-            <img src="./images/icon-minus.svg"> 0 <img src="./images/icon-plus.svg"></button>
-          <button class="addToCart"> <img src="./images/icon-cart-white.svg"> Add to cart</button>
-        </div>
-      </div>
-
+                <div class="btnWrapper">
+                    <button class="quantity">
+                        <img src="./images/icon-minus.svg"> 0 <img src="./images/icon-plus.svg"></button>
+                    <button class="addToCart"> <img src="./images/icon-cart-white.svg"> Add to cart</button>
+                </div>
+            </div>
+        </main>
     </div>
-    
-  </main>
-  
 </body>
 </html>
